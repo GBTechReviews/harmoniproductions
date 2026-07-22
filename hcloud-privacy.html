@@ -17,7 +17,7 @@
 <body>
 <div class="wrap">
   <h1>HCloud — Privacy Policy</h1>
-  <p class="updated">Last updated: 22 July 2026</p>
+  <p class="updated">Last updated: 22 July 2026 (revised)</p>
 
   <p>HCloud ("the app", "we", "us") is a HarmonyOS app by GBTechReviews (Harmoni Productions) that lets you back up your own photos, videos, and files to your own Google Drive and/or Google Photos account. HCloud has no servers of its own — it connects your device directly to Google's services using your Google sign-in. We never receive, store, or see your files.</p>
 
@@ -47,9 +47,23 @@
     <li><strong>Keep background running:</strong> so an in-progress backup can finish if you leave the app or lock your screen.</li>
   </ul>
 
-  <h2>Google user data</h2>
-  <p>HCloud's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. The app uses Google Drive and Google Photos access solely to upload the items you choose to your own account, and to show you what it has uploaded.</p>
+  <h2>How HCloud accesses, uses, stores, and shares Google user data</h2>
+  <p><strong>Access.</strong> With your consent via Google sign-in, HCloud accesses: (a) your Google Drive, limited to files and folders the app itself creates (drive.file scope); (b) the ability to upload to your Google Photos library (photoslibrary.appendonly scope); and (c) a listing of the photos and videos HCloud itself has uploaded to Google Photos (photoslibrary.readonly.appcreateddata scope). HCloud cannot see any other content in your Drive or Photos library.</p>
+  <p><strong>Use.</strong> This access is used for one purpose only: uploading the photos, videos, and files you choose to your own Google account, and displaying to you what the app has uploaded. Google user data is not used for advertising, analytics, profiling, or any other purpose.</p>
+  <p><strong>Storage.</strong> HCloud does not operate any servers, and no Google user data is stored by us. The only Google-related data kept on your device is your OAuth sign-in token and a local record of items the app has uploaded, both held in the app's private, sandboxed storage on your phone. Your files are transferred directly from your device to Google and are stored only in your own Google account.</p>
+  <p><strong>Sharing.</strong> HCloud does not share, transfer, sell, or disclose Google user data to any third party, ever. No human at Harmoni Productions can read your data, because it never reaches us.</p>
+  <p><strong>Retention and deletion.</strong> The sign-in token and local records are deleted when you disconnect Google inside the app or uninstall it. You can revoke HCloud's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <p>HCloud's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
+  <h2>How we protect your data</h2>
+  <ul>
+    <li>All transfers between your device and Google use HTTPS (TLS encryption). No data is ever sent over an unencrypted connection.</li>
+    <li>Your Google sign-in token is stored only in the app's private, sandboxed storage on your device, which other apps cannot access. It is never written to shared storage, logged, or transmitted anywhere except to Google's own authentication servers.</li>
+    <li>Sign-in uses Google's OAuth 2.0 with PKCE. HCloud never sees, asks for, or stores your Google password.</li>
+    <li>Because HCloud has no servers, there is no server-side database of user data that could be breached.</li>
+    <li>If a security issue is ever discovered, we will remediate it promptly and update the app; users can contact us at the address below to report concerns.</li>
+  </ul>
+  
   <h2>Where your data lives</h2>
   <p>Everything you back up through HCloud stays in your own Google account, governed by Google's own privacy policy. HCloud simply provides the interface to put it there.</p>
 
