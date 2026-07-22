@@ -5,44 +5,65 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HCloud — Privacy Policy</title>
 <style>
-  body { margin:0; font-family: -apple-system, Segoe UI, Roboto, sans-serif; background:#0F141B; color:#E3EAF2; }
+  body { margin:0; font-family: -apple-system, "Segoe UI", Roboto, sans-serif; background:#0F141B; color:#E3EAF2; }
   .wrap { max-width:680px; margin:0 auto; padding:60px 24px 100px; }
   h1 { font-size:28px; }
   h2 { font-size:18px; margin-top:36px; color:#E3EAF2; }
   p, li { color:#B4BDC9; line-height:1.7; }
-  a { color:#7FA8CE; }
+  a { color:#7FA8CE; word-break:break-all; }
+  .updated { color:#8A95A6; font-size:14px; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>HCloud — Privacy Policy</h1>
-  <p>Last updated: 13 July 2026</p>
+  <p class="updated">Last updated: 22 July 2026</p>
 
-  <p>HCloud is a HarmonyOS app that lets you back up your own photos, videos, and files to your own Google Drive and/or Google Photos account. HCloud has no servers of its own — it connects your device directly to Google's services using your Google sign-in.</p>
+  <p>HCloud ("the app", "we", "us") is a HarmonyOS app by GBTechReviews (Harmoni Productions) that lets you back up your own photos, videos, and files to your own Google Drive and/or Google Photos account. HCloud has no servers of its own — it connects your device directly to Google's services using your Google sign-in. We never receive, store, or see your files.</p>
 
-  <h2>What we access</h2>
+  <h2>What the app accesses</h2>
   <p>With your permission, HCloud can:</p>
   <ul>
-    <li>Upload photos, videos, and files you choose to your Google Drive, in a folder named "HCloud" or "HCloud Files".</li>
-    <li>Upload photos and videos you choose to your Google Photos library.</li>
+    <li>Upload photos, videos, and files you choose to your Google Drive, in folders the app creates (named "HCloud" and "HCloud Files" unless you rename them). This uses the <strong>drive.file</strong> permission, which is limited strictly to files the app itself creates — HCloud cannot see or touch anything else in your Drive.</li>
+    <li>Upload photos and videos you choose to your Google Photos library (the <strong>photoslibrary.appendonly</strong> permission).</li>
+    <li>List the photos and videos that HCloud itself has uploaded to your Google Photos, so the app can show you your backups (the <strong>photoslibrary.readonly.appcreateddata</strong> permission). This is limited to items created by HCloud — the app cannot see the rest of your Google Photos library.</li>
   </ul>
 
-  <h2>What we don't do</h2>
+  <h2>What we do not do</h2>
   <ul>
-    <li>We do not run our own servers, and your files never pass through any server we control.</li>
+    <li>We do not run any servers, and your files never pass through anything we control.</li>
     <li>We do not read, view, or analyse your files or photos.</li>
+    <li>We do not collect personal data, use analytics, or track you.</li>
+    <li>We do not display advertisements.</li>
     <li>We do not share, sell, or transmit your data to any third party.</li>
-    <li>We do not track you or serve ads.</li>
   </ul>
+
+  <h2>Information stored on your device</h2>
+  <p>The app keeps a small amount of data locally on your phone so it can work properly: your Google sign-in token, your chosen theme and settings, backup counts and timestamps, and — if a backup is interrupted — the list of items still waiting so it can carry on later. None of this leaves your device.</p>
+
+  <h2>Permissions the app requests</h2>
+  <ul>
+    <li><strong>Internet:</strong> to upload your selected items to your own Google account.</li>
+    <li><strong>Keep background running:</strong> so an in-progress backup can finish if you leave the app or lock your screen.</li>
+  </ul>
+
+  <h2>Google user data</h2>
+  <p>HCloud's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. The app uses Google Drive and Google Photos access solely to upload the items you choose to your own account, and to show you what it has uploaded.</p>
 
   <h2>Where your data lives</h2>
-  <p>Everything you back up through HCloud stays in your own Google account, governed by Google's own privacy policy. HCloud simply provides the interface to upload it there.</p>
+  <p>Everything you back up through HCloud stays in your own Google account, governed by Google's own privacy policy. HCloud simply provides the interface to put it there.</p>
 
-  <h2>Your access token</h2>
-  <p>Your Google sign-in token is stored only on your own device, used solely to authorise uploads on your behalf. You can revoke HCloud's access at any time from your Google Account's security settings, or by disconnecting inside the app.</p>
+  <h2>Removing access and deleting data</h2>
+  <p>You can disconnect Google at any time inside the app, which removes the stored sign-in token from your device. You can also revoke HCloud's access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Uninstalling the app removes all locally stored settings. Items already uploaded remain in your Google account, managed by you like anything else stored there.</p>
+
+  <h2>Children's privacy</h2>
+  <p>HCloud is not directed at children under 13, or the relevant minimum age in their country or region, and does not knowingly collect information from them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new "Last updated" date.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  <p>Questions about this policy: <a href="mailto:huaweiproreview@gmail.com">huaweiproreview@gmail.com</a></p>
 </div>
 </body>
 </html>
